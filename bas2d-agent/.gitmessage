@@ -1,0 +1,58 @@
+# ================================================
+##<type>(<scope>): <short summary>
+
+##<body> 변경한 이유와 변경 전과의 차이점을 설명합니다.
+
+##<footer>
+# - Breaking Changes
+# - Referencing Issues ex)SP-2 #in-progress (#comment) jira에 댓글이 달려요~ #time 1w 3h 5h 30m
+# ================================================
+
+# ------type------
+# - feat : 새로운 기능 추가
+# - fix : 버그 수정
+# - docs : 문서 관련
+# - style : 스타일 변경 (포매팅 수정, 들여쓰기 추가, …)
+# - refactor : 코드 리팩토링
+# - test : 테스트 관련 코드
+# - build : 빌드 관련 파일 수정
+# - ci : CI 설정 파일 수정
+# - perf : 성능 개선
+# - chore : 그 외 자잘한 수정
+
+
+# ------Sample Commit Message------
+#fix($compile): couple of unit tests for IE9
+
+#Older IEs serialize html uppercased, but IE9 does not...
+#Would be better to expect case insensitive, unfortunately jasmine does
+#not allow to user regexps for throw expectations.
+
+#Closes #392
+#Breaks foo.bar api, foo.baz should be used instead
+
+
+# -------Scope-------
+# 어디가 변경되었는지, 변경된 부분은 모두 들어갈 수 있습니다.
+
+
+# -------Short Summary-------
+# - 명령문, 현재 시제로 작성합니다.
+#       ex) change(O) →  changed(X)
+# - 첫글자를 대문자로 쓰지 마세요. 소문자로 쓰세요.
+# - 마지막에 마침표(.)를 붙이지 마세요
+
+
+# -------Body-------
+# - 명령문, 현재 시제로 작성하길 권장합니다.
+# - 변경한 이유와 변경 전과의 차이점을 설명합니다.
+
+
+# -------Footer-------
+# - Breaking Changes
+# - Referencing Issues
+#       ex) Closes #123, #245, #992
+# - Smart Commit in Jira
+#    Multiple commands over multiple lines on a single issue is not allowed.
+#    -> SP-2 #done
+#       SP-2 #comment

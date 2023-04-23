@@ -1,0 +1,22 @@
+[MASTER]
+
+disable=
+    C0114,  # module level docstring
+    C0115,  # class level docstring
+    R0903,  # too-few-public-methods
+    W1203,  # fstring
+
+
+ignore=migrations,.venv
+
+ignore-patterns=test_.*?py
+
+
+ignored-modules=
+    numpy,
+    routine,
+    cv2,
+    dotenv,
+    nvjpeg,
+    zmq
+
